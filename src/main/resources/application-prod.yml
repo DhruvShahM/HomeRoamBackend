@@ -2,7 +2,7 @@ logging:
   level:
     ROOT: info
     org.hibernate.SQL: INFO
-    fr.codecake.airbnbcloneback: INFO
+    fr.codecake.homeroam_clone: INFO
 
 spring:
   datasource:
@@ -31,3 +31,4 @@ spring:
     # POSTGRES_DB=railway
     # POSTGRES_USER=postgres
     # POSTGRES_PASSWORD=AWYuqFKJgcNnQroRsjPJOXpZQowqLjRF
+    # spring_profiles_ctive=prod
