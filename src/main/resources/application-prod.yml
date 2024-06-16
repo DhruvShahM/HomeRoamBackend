@@ -6,7 +6,7 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgresql://${POSTGRES_URL}:5432/${POSTGRES_DB}
+    url: postgresql://${POSTGRES_URL}:${POSTGRES_PORT}/${POSTGRES_DB}
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
   jpa:
@@ -16,3 +16,18 @@ spring:
   liquibase:
     contexts: prod
     default-schema: homeroam_clone
+
+
+
+    #     # url: jdbc:postgresql://${POSTGRES_URL}:5432/${POSTGRES_DB}
+    # url: postgresql://postgres:AWYuqFKJgcNnQroRsjPJOXpZQowqLjRF@roundhouse.proxy.rlwy.net:54121/railway
+    # # username: ${POSTGRES_USER}
+    # username: postgres
+    # # password: ${POSTGRES_PASSWORD}
+    # password: AWYuqFKJgcNnQroRsjPJOXpZQowqLjRF
+
+    # POSTGRES_URL=postgres:AWYuqFKJgcNnQroRsjPJOXpZQowqLjRF@roundhouse.proxy.rlwy.net
+    # POSTGRES_PORT=5432
+    # POSTGRES_DB=railway
+    # POSTGRES_USER=postgres
+    # POSTGRES_PASSWORD=AWYuqFKJgcNnQroRsjPJOXpZQowqLjRF
